@@ -1,0 +1,9 @@
+El código original presentaba varios errores que impedían que funcionara correctamente.
+
+Primero, se utilizó la estructura Nodos en lugar de Nodo, lo que causaba inconsistencias en el programa. También había varios errores al usar el operador = en lugar de == en condiciones como if (head = NULL) y en la función de búsqueda.
+
+Además, al insertar al inicio se utilizó == en lugar de =, lo que impedía enlazar correctamente los nodos. El recorrido hacia adelante usaba el puntero anterior en vez de siguiente, y el recorrido hacia atrás no llegaba correctamente al último nodo antes de imprimir.
+
+El contador de nodos iniciaba en 1 en lugar de 0, la función para liberar memoria recorría la lista en dirección incorrecta y faltaba un ; que impedía compilar el programa.
+
+Por último, la condición del do-while estaba mal porque el programa salía con la opción 20 en lugar de la opción 8 del menú.
